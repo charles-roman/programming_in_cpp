@@ -1,9 +1,9 @@
 #include <cstddef>
 
-#ifndef PROJECT_SINGLYLINKEDLIST_HPP
-#define PROJECT_SINGLYLINKEDLIST_HPP
+#ifndef PROJECT_SLIST_HPP
+#define PROJECT_SLIST_HPP
 
-namespace croman_library {
+namespace crs {
 
 template <class T>
 class Node {
@@ -66,8 +66,8 @@ class SList {
         Node<T>* tail{nullptr};
 };
 
-} // namespace croman_library
+} // namespace crs (c. roman [data] structures [library])
 
-#include "singly_linked_list.tpp"
+#include "slist.tpp"
 
-#endif  // PROJECT_SINGLYLINKEDLIST_HPP
+#endif  // PROJECT_SLIST_HPP

@@ -1,14 +1,9 @@
-#include <cstdlib>
 #include <iostream>
-#include <forward_list>
-
-#include "singly_linked_list.hpp"
-
-namespace crlib = croman_library;
+#include "slist.hpp"
 
 int main (int argc, char* argv[]) {
     
-    crlib::SList<int> slist;
+    crs::SList<int> slist;
 
     std::cout << "TEST BEGIN" << std::endl;
 
@@ -74,7 +69,7 @@ int main (int argc, char* argv[]) {
 
     /*
     std::cout << "COPYING..." << std::endl;
-    slist2 = slist; // MUST CREATE VALID COPY OPERATORS IN "SList Class" AND "Node Class"
+    slist2 = slist; // MUST CREATE VALID COPY OPERATORS IN CLASS "SList" AND CLASS "Node"
     std::cout << "-----------------------------------------" << std::endl;
     std::cout << "printing slist... \n";
     slist.print();
